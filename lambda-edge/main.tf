@@ -17,3 +17,16 @@ output "path_based_spa_edge_arn" {
 output "path_based_spa_edge_version" {
   value = "${module.path_based_spa_edge.version}"
 }
+
+
+module "spa_edge" {
+  source = "github.com/ridegopher/aws-tf//lambda-edge/spa"
+}
+
+output "spa_edge_arn" {
+  value = "${module.spa_edge.arn}"
+}
+
+output "spa_edge_version" {
+  value = "${module.spa_edge.version}"
+}
