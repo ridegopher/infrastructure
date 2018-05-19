@@ -8,5 +8,5 @@ terraform {
 
 module "s3_for_cdn" {
   source = "github.com/ridegopher/aws-tf//s3/replicated"
-  bucket_name = "ridegopher-cdn"
+  bucket_name = "ridegopher-cross-region"
 }
